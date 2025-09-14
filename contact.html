@@ -1,11 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-white dark:bg-gray-900">
+    <!-- top navigation bar -->
+    <nav class="bg-white dark:bg-gray-800 shadow-md fixed w-full top-0 z-50">
+      <!-- <div class="max-w-6xl mx-auto px-4"> -->
+      <div
+        class="flex justify-between items-center h-16 pr-30 pl-30 md:space-x-8"
+      >
+        <h1 class="text-xl font-bold text-gray-800 dark:text-white">
+          <span>.</span><span class="text-teal-300 text-3xl">Portfolio</span>
+        </h1>
+        <!-- Desktop nav bar -->
+        <div class="hidden md:flex space-x-8 justify-center">
+          <a href="index.html" class="text-gray-300 font-medium hover:text-teal-300">Home</a>
+          <a
+            href="about.html"
+            class="text-gray-600 dark:text-gray-300 hover:text-teal-300"
+            >About</a
+          >
+          <a
+            href="skills.html"
+            class="text-gray-600 dark:text-gray-300 hover:text-teal-300"
+            >Skills</a
+          >
+          <a
+            href="projects.html"
+            class="text-gray-600 dark:text-gray-300 hover:text-teal-300"
+            >Projects</a
+          >
+          <a
+            href="contact.html"
+            class="text-gray-600 dark:text-teal-300 hover:text-teal-300"
+            >Contact</a
+          >
+          <button
+            onclick="toggleTheme()"
+            class="bg-gray-200 dark:bg-gray-700 p-2 rounded-full"
+          >
+            🌙
+          </button>
+        </div>
+        <!-- Mobile hamburger nav bar -->
+        <div class="md:hidden">
+          <button
+            onclick="toggleMobileMenu()"
+            class="text-gray-600 dark:text-gray-300"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden pb-4 flex flex-col text-center"
+      >
+        <a href="index.html" class="block py-2 text-gray-300 font-medium hover:text-teal-300"
+          >Home</a
+        >
+        <a
+          href="about.html"
+          class="block py-2 text-gray-600 dark:text-gray-300 hover:text-teal-300"
+          >About</a
+        >
+        <a
+          href="skills.html"
+          class="block py-2 text-gray-600 dark:text-gray-300 hover:text-teal-300"
+          >Skills</a
+        >
+        <a
+          href="projects.html"
+          class="block py-2 text-gray-600 dark:text-gray-300 hover:text-teal-300"
+          >Projects</a
+        >
+        <a
+          href="contact.html"
+          class="block py-2 text-teal-600 dark:text-teal-300 hover:text-teal-300"
+          >Contact</a
+        >
+        <button
+          onclick="toggleTheme()"
+          class="bg-gray-200 dark:bg-gray-700 p-2 rounded-full pl-2 pr-2"
+        >
+          🌙
+        </button>
+      </div>
+      <!-- </div> -->
+    </nav>
+           <!-- Footer -->
+    <footer class="bg-gray-900 text-white  flex justify-center p-5 border-t border-gray-800">
+                <p class="text-gray-400">
+                    © 2025 iris-ghislaine . All rights reserved.
+                </p>
+    </footer>
+  </body>

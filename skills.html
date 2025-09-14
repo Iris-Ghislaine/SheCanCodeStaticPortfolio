@@ -11,96 +11,242 @@
     />
   </head>
   <body class="bg-white dark:bg-gray-900">
-    <!-- top navigation bar -->
+    <!-- Top Navigation Bar -->
     <nav class="bg-white dark:bg-gray-800 shadow-md fixed w-full top-0 z-50">
-      <!-- <div class="max-w-6xl mx-auto px-4"> -->
-      <div
-        class="flex justify-between items-center h-16 pr-30 pl-30 md:space-x-8"
-      >
+      <div class="flex justify-between items-center h-16 px-6 md:space-x-8">
         <h1 class="text-xl font-bold text-gray-800 dark:text-white">
           <span>.</span><span class="text-teal-300 text-3xl">Portfolio</span>
         </h1>
-        <!-- Desktop nav bar -->
-        <div class="hidden md:flex space-x-8 justify-center">
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex space-x-8">
           <a href="index.html" class="text-gray-300 font-medium hover:text-teal-300">Home</a>
-          <a
-            href="about.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-teal-300"
-            >About</a
-          >
-          <a
-            href="skills.html"
-            class="text-gray-600 dark:text-teal-300 hover:text-teal-300"
-            >Skills</a
-          >
-          <a
-            href="projects.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-teal-300"
-            >Projects</a
-          >
-          <a
-            href="contact.html"
-            class="text-gray-600 dark:text-gray-300 hover:text-teal-300"
-            >Contact</a
-          >
-          <button
-            onclick="toggleTheme()"
-            class="bg-gray-200 dark:bg-gray-700 p-2 rounded-full hover:bg-teal-300"
-          >
-            🌙
-          </button>
+          <a href="about.html" class="text-gray-600 dark:text-gray-300 hover:text-teal-300">About</a>
+          <a href="skills.html" class="text-gray-600 dark:text-teal-300 hover:text-teal-300">Skills</a>
+          <a href="projects.html" class="text-gray-600 dark:text-gray-300 hover:text-teal-300">Projects</a>
+          <a href="contact.html" class="text-gray-600 dark:text-gray-300 hover:text-teal-300">Contact</a>
+          <button onclick="toggleTheme()" class="bg-gray-200 dark:bg-gray-700 p-2 rounded-full hover:bg-teal-300">🌙</button>
         </div>
-        <!-- Mobile hamburger nav bar -->
-        <div class="md:hidden">
-          <button
-            onclick="toggleMobileMenu()"
-            class="text-gray-600 dark:text-gray-300"
-          >
-            ☰
-          </button>
-        </div>
+        <!-- Mobile Menu Button -->
+        <button onclick="toggleMobileMenu()" class="md:hidden text-gray-600 dark:text-gray-300">☰</button>
       </div>
       <!-- Mobile Menu -->
-      <div
-        id="mobileMenu"
-        class="hidden md:hidden pb-4 flex flex-col text-center"
-      >
-        <a href="index.html" class="block py-2 text-gray-300 font-medium hover:text-teal-300"
-          >Home</a
-        >
-        <a
-          href="about.html"
-          class="block py-2 text-gray-600 dark:text-gray-300 hover:text-teal-300"
-          >About</a
-        >
-        <a
-          href="skills.html"
-          class="block py-2 text-gray-600 dark:text-teal-300 hover:text-teal-300"
-          >Skills</a
-        >
-        <a
-          href="projects.html"
-          class="block py-2 text-gray-600 dark:text-gray-300 hover:text-teal-300"
-          >Projects</a
-        >
-        <a
-          href="contact.html"
-          class="block py-2 text-gray-600 dark:text-gray-300 hover:text-teal-300"
-          >Contact</a
-        >
-        <button
-          onclick="toggleTheme()"
-          class="bg-gray-200 dark:bg-gray-700 p-2 rounded-full pl-2 pr-2"
-        >
-          🌙
-        </button>
+      <div id="mobileMenu" class="hidden md:hidden pb-4 flex flex-col text-center">
+        <a href="index.html" class="block py-2 text-gray-300 font-medium hover:text-teal-300">Home</a>
+        <a href="about.html" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-teal-300">About</a>
+        <a href="skills.html" class="block py-2 text-gray-600 dark:text-teal-300 hover:text-teal-300">Skills</a>
+        <a href="projects.html" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-teal-300">Projects</a>
+        <a href="contact.html" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-teal-300">Contact</a>
+        <button onclick="toggleTheme()" class="bg-gray-200 dark:bg-gray-700 p-2 rounded-full">🌙</button>
       </div>
-      <!-- </div> -->
     </nav>
-           <!-- Footer -->
-    <footer class="bg-gray-900 text-white  flex justify-center p-5 border-t border-gray-800">
-                <p class="text-gray-400">
-                    © 2025 iris-ghislaine . All rights reserved.
-                </p>
+
+    <!-- Skills Section -->
+    <section class="py-30 bg-teal-50 dark:bg-gray-900 max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-6">My Skills</h1>
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+        Here are the technologies and tools I work with to create amazing websites and mobile apps.
+      </p>
+
+      <div class="py-10">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Frontend Development -->
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+            <div class="bg-teal-300 text-white p-4 rounded-lg mb-4">
+              <h3 class="text-xl font-semibold">Frontend Development</h3>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 dark:text-gray-300">HTML/CSS</span>
+                  <span class="text-gray-500">95%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-teal-300 h-2 rounded-full" style="width: 95%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 dark:text-gray-300">JavaScript</span>
+                  <span class="text-gray-500">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-teal-300 h-2 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 dark:text-gray-300">React</span>
+                  <span class="text-gray-500">60%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-teal-300 h-2 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 dark:text-gray-300">React Native</span>
+                  <span class="text-gray-500">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-teal-300 h-2 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 dark:text-gray-300">SwiftUI</span>
+                  <span class="text-gray-500">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-teal-300 h-2 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 dark:text-gray-300">Tailwind CSS</span>
+                  <span class="text-gray-500">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-teal-300 h-2 rounded-full" style="width: 88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Development -->
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+            <div class="bg-teal-300 text-white p-4 rounded-lg mb-4">
+              <h3 class="text-xl font-semibold">Backend Development</h3>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 dark:text-gray-300">Node.js</span>
+                  <span class="text-gray-500">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-teal-300 h-2 rounded-full" style="width: 80%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 dark:text-gray-300">Python</span>
+                  <span class="text-gray-500">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-teal-300 h-2 rounded-full" style="width: 75%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 dark:text-gray-300">Spring Boot</span>
+                  <span class="text-gray-500">82%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-teal-300 h-2 rounded-full" style="width: 82%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 dark:text-gray-300">Postgres</span>
+                  <span class="text-gray-500">78%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-teal-300 h-2 rounded-full" style="width: 78%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Others -->
+          <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+            <div class="bg-teal-300 text-white p-4 rounded-lg mb-4">
+              <h3 class="text-xl font-semibold">Tools & Others</h3>
+            </div>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 dark:text-gray-300">Git</span>
+                  <span class="text-gray-500">90%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-teal-300 h-2 rounded-full" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 dark:text-gray-300">Figma</span>
+                  <span class="text-gray-500">85%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-teal-300 h-2 rounded-full" style="width: 85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 dark:text-gray-300">Photoshop</span>
+                  <span class="text-gray-500">70%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-teal-300 h-2 rounded-full" style="width: 70%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-gray-700 dark:text-gray-300">WordPress</span>
+                  <span class="text-gray-500">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div class="bg-teal-300 h-2 rounded-full" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soft Skills -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">Soft Skills</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-lg text-center">
+            <div class="text-4xl mb-4">🧠</div>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Problem Solving</h3>
+            <p class="text-gray-600 dark:text-gray-300">Breaking down complex problems into simple solutions</p>
+          </div>
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-lg text-center">
+            <div class="text-4xl mb-4">💬</div>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Communication</h3>
+            <p class="text-gray-600 dark:text-gray-300">Clear communication with team members and clients</p>
+          </div>
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-lg text-center">
+            <div class="text-4xl mb-4">👥</div>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Teamwork</h3>
+            <p class="text-gray-600 dark:text-gray-300">Working effectively in collaborative environments</p>
+          </div>
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-lg text-center">
+            <div class="text-4xl mb-4">⚡</div>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Adaptability</h3>
+            <p class="text-gray-600 dark:text-gray-300">Quick to learn new technologies and adapt to changes</p>
+          </div>
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-lg text-center">
+            <div class="text-4xl mb-4">🎨</div>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Creativity</h3>
+            <p class="text-gray-600 dark:text-gray-300">Innovative thinking for design and problem-solving</p>
+          </div>
+          <div class="bg-white dark:bg-gray-900 p-6 rounded-lg text-center">
+            <div class="text-4xl mb-4">⏰</div>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Time Management</h3>
+            <p class="text-gray-600 dark:text-gray-300">Efficient project delivery within deadlines</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white flex justify-center p-5 border-t border-gray-800">
+      <p class="text-gray-400">© 2025 iris-ghislaine. All rights reserved.</p>
     </footer>
   </body>
+  <script src="script.js"></script>
+</html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   </head>
   <body class="bg-white dark:bg-gray-900">
     <!-- top navigation bar -->
@@ -86,6 +87,45 @@
       </div>
       <!-- </div> -->
     </nav>
+    <!-- hero section -->
+  <section class="min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex gap-100">
+            <div class="flex flex-col items-center">
+                <!-- Content -->
+                <div class="animate-fade-in-left">
+                    <h4 class="text-white text-xl mb-4 font-medium">Hello, I'm</h4>
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-teal-300 bg-clip-text text-transparent">
+                        Iris-Ghislaine
+                    </h1>
+                    <h3 class="text-lg lg:text-xl text-gray-300 dark:text-gray-400 mb-8 leading-relaxed">
+                        Passionate Full Stack Developer dedicated to creating <br>cutting-edge software solutions.
+                    </h3>
+                    
+                    <button class="bg-gradient-to-r from-teal-300 to-teal-700 px-8 py-3 rounded-full text-white font-semibold hover:-translate-y-1 mb-8 transition-all duration-300" onclick="window.location.href='images/GanzaCV.pdf'">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </button>
+
+                    <!-- Social Icons -->
+                    <div class="flex gap-4 mb-12">
+                        <a href="irisghislaine7@gmail.com" class="w-12 h-12 bg-teal-300/20 border-2 border-teal-300 rounded-full flex items-center justify-center text-teal-300 hover:bg-teal-300 hover:text-white hover:-translate-y-1 transition-all duration-300">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/iris-ghislaine-ganza-188797334/" class="w-12 h-12 bg-teal-300/20 border-2 border-teal-300 rounded-full flex items-center justify-center text-teal-300 hover:bg-teal-300 hover:text-white hover:-translate-y-1 transition-all duration-300">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Iris-Ghislaine" class="w-12 h-12 bg-teal-300/20 border-2 border-teal-300 rounded-full flex items-center justify-center text-teal-300 hover:bg-teal-300 hover:text-white hover:-translate-y-1 transition-all duration-300">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    </div>
+                     </div>
+                    <div id="profileImage">
+                    <img src="/images/me.jpg" alt=""class="w-100 h-100 object-cover rounded-full border-4 border-teal-300 shadow-lg">
+                    </div>
+                
+               
+     </section>
   </body>
   <script src="script.js"></script>
 </html>

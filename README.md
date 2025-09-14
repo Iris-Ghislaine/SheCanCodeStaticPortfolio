@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website built with HTML and Tailwind CSS, showcasing my skills, projects, and professional experience.
 
-## 🌟 Features
+##  Features
 
 ### Core Pages
 - **Home** - Hero section with introduction and featured projects preview
@@ -19,7 +19,7 @@ A modern, responsive personal portfolio website built with HTML and Tailwind CSS
 - **Modern Design** - Clean, professional layout with hover effects
 - **Fast Loading** - Optimized for performance
 
-## 🎨 Design
+##  Design
 
 - **Clean Layout** - Professional and modern design
 - **Consistent Navigation** - Same navigation across all pages
@@ -27,14 +27,14 @@ A modern, responsive personal portfolio website built with HTML and Tailwind CSS
 - **Typography** - Clear, readable fonts with proper hierarchy
 - **Hover Effects** - Subtle interactions for better user experience
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **HTML5** - Semantic markup structure
 - **Tailwind CSS** - Utility-first CSS framework
 - **JavaScript** - Interactive functionality
 - **Responsive Design** - Mobile-first approach
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 portfolio-website/
@@ -62,14 +62,14 @@ portfolio-website/
    - Modify colors and styling as needed
    - Add your own project images and descriptions
 
-## 📱 Responsive Design
+## Responsive Design
 
 The website is fully responsive and works on:
 - **Desktop** - Full layout with sidebar navigation
 - **Tablet** - Adapted layout for medium screens
 - **Mobile** - Optimized for small screens with hamburger menu
 
-## 🎯 Key Features
+## Key Features
 
 ### Dark Mode
 - Toggle between light and dark themes
@@ -112,14 +112,14 @@ Replace the placeholder images with your own:
 - Project screenshots
 - About page image
 
-## 📊 Browser Support
+## Browser Support
 
 - Chrome (recommended)
 - Firefox
 - Safari
 - Edge
 
-## 📈 Performance
+## Performance
 
 - Fast loading times
 - Optimized images
@@ -153,21 +153,6 @@ Replace the placeholder images with your own:
 - Contact information
 - Social media links
 
-## 📧 Contact
 
-- **Email**: alex.johnson@example.com
-- **Phone**: +1 (555) 123-4567
-- **Location**: San Francisco, CA
 
-## 📄 License
-
-This project is open source and available under the MIT License.
-
-## 🙏 Acknowledgments
-
-- **Tailwind CSS** - For the utility-first CSS framework
-- **Pexels** - For high-quality stock photos used in the demo
-
----
-
-Built with ❤️ using HTML, Tailwind CSS, and JavaScript.
+Built using HTML, Tailwind CSS, and JavaScript.

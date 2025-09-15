@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-      <script>
+    <script>
         tailwind.config = {
             darkMode: 'class',
         }
@@ -50,7 +51,7 @@
           >
           <button
             onclick="toggleTheme()"
-            class="bg-gray-200 dark:bg-gray-700 p-2 rounded-full"
+            class="bg-gray-200 dark:bg-gray-700 p-2 rounded-full ml-35"
           >
             🌙
           </button>
@@ -59,7 +60,7 @@
         <div class="md:hidden">
           <button
             onclick="toggleMobileMenu()"
-            class="text-gray-600 dark:text-gray-300"
+            class="text-gray-600 dark:text-gray-300 ml-35"
           >
             ☰
           </button>
